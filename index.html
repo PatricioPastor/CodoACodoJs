@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script>
+</head>
+<body>
+    <header class="navbar">
+        <section class="navbar-logo">Conf Bs As</section>
+        <section class="navbar-content">
+            <ul class="navbar-items">
+                <li>La conferencia</li>
+                <li>Los oradores</li>
+                <li>El lugar y la fecha</li>
+                <li>Conviertete en orador</li>
+                <li>Comprar tickets</li>
+            </ul>
+        </section>
+    </header>
+    <main>
+        <section class="category">
+            <div class="students">
+                <h2>Estudiante</h2>
+                <p>Tienen un descuento</p>
+                <h3>80%</h3>
+                <p>*presentar documentacion </p>
+            </div>
+            <div class="traine">
+                <h2>Trainee</h2>
+                <p>Tienen un descuento</p>
+                <h3>50%</h3>
+                <p>*presentar documentacion </p>
+            </div>
+            <div class="junior">
+                <h2>Junior</h2>
+                <p>Tienen un descuento</p>
+                <h3>15%</h3>
+                <p>*presentar documentacion </p>
+            </div>
+        </section>
+        <section class="ticket">
+            <h3>VENTA</h3>
+            <h1>VALOR DE TICKET $200</h1>
+            <form class="form">
+                <input type="text" class="name" placeholder="Nombre...">
+                <input type="text" class="lastname" placeholder="Apellido...">
+                <input type="email" name="" id="" class="email" placeholder="name_email@example.com">
+                <input type="number" name="" id="" class="num-tickets" placeholder="">
+                <label for="">Cantidad</label>
+                <label for="">Categoria</label>
+                <select name="categoria" id="" class="category-input">
+                    <option value="" disabled selected hidden>Categoria...</option>
+                    <option value="estudiante">Estudiante</option>
+                    <option value="trainee">Trainee</option>
+                    <option value="junior">Junior</option>
+                </select>
+                <div class="price">
+                    <p>Total a pagar $</p>
+                </div>
+                <input type="submit" value="Enviar" class="submit">
+                <button type="reset" class="reset">Reset</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <ul class="footer-items">
+            <li>Contactanos</li>
+            <li>Prensa</li>
+            <li>Conferencias</li>
+            <li>Terminos y Condiciones</li>
+            <li>Privacidad</li>
+            <li>Estudiantes</li>
+        </ul>
+    </footer>
+</body>
+</html>
