@@ -49,20 +49,20 @@
             <h3>VENTA</h3>
             <h1>VALOR DE TICKET $200</h1>
             <form class="form">
-                <input type="text" class="name" placeholder="Nombre...">
-                <input type="text" class="lastname" placeholder="Apellido...">
-                <input type="email" name="" id="" class="email" placeholder="name_email@example.com">
-                <input type="number" name="" id="" class="num-tickets" placeholder="">
+                <input type="text" id="name" class="name" placeholder="Nombre...">
+                <input type="text" class="lastname" id="lastname" placeholder="Apellido...">
+                <input type="email" name="" id="email" class="email" placeholder="name_email@example.com">
+                <input type="number" name="" id="num-tickets" class="num-tickets" placeholder="">
                 <label for="">Cantidad</label>
                 <label for="">Categoria</label>
-                <select name="categoria" id="" class="category-input">
+                <select name="categoria" id="category-input" class="category-input">
                     <option value="" disabled selected hidden>Categoria...</option>
                     <option value="estudiante">Estudiante</option>
                     <option value="trainee">Trainee</option>
                     <option value="junior">Junior</option>
                 </select>
-                <div class="price">
-                    <p>Total a pagar $</p>
+                <div class="price" id="price">
+                    <p class="total" id="total">Total a pagar $</p>
                 </div>
                 <input type="submit" value="Enviar" class="submit">
                 <button type="reset" class="reset">Reset</button>

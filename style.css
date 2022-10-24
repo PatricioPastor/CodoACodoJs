@@ -205,6 +205,7 @@ input:focus{
     font-weight: 500;
     font-size: 16px;
 }
+
 .submit, .reset {
     border:none;
     background-color:#62910c;
