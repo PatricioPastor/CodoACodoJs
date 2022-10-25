@@ -2,8 +2,15 @@ const numTicket = document.getElementById('num-tickets');
 const category = document.getElementById('category-input');
 const price = document.getElementById('price');
 const label = document.createElement('label');
+const junior = document.getElementById('junior');
+const traine = document.getElementById('traine');
+const student = document.getElementById('students');
 let value = 200;
 let i = 0;
+
+junior.addEventListener('click', ()=>{category.value = "junior";});
+traine.addEventListener('click', ()=>{ category.value = "trainee"})
+student.addEventListener('click', ()=>{ category.value = "estudiante" });
 
 function createMenuItem() {
     let p = document.createElement('p');
@@ -11,6 +18,7 @@ function createMenuItem() {
     p.classList.add('precio')
     return p;
 }
+
 
 function actValue(){
     let ticket = numTicket.value;

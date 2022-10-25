@@ -26,19 +26,19 @@
     </header>
     <main>
         <section class="category">
-            <div class="students">
+            <div class="students" id="students">
                 <h2>Estudiante</h2>
                 <p>Tienen un descuento</p>
                 <h3>80%</h3>
                 <p>*presentar documentacion </p>
             </div>
-            <div class="traine">
+            <div class="traine" id="traine">
                 <h2>Trainee</h2>
                 <p>Tienen un descuento</p>
                 <h3>50%</h3>
                 <p>*presentar documentacion </p>
             </div>
-            <div class="junior">
+            <div class="junior" id="junior">
                 <h2>Junior</h2>
                 <p>Tienen un descuento</p>
                 <h3>15%</h3>
@@ -52,7 +52,7 @@
                 <input type="text" id="name" class="name" placeholder="Nombre...">
                 <input type="text" class="lastname" id="lastname" placeholder="Apellido...">
                 <input type="email" name="" id="email" class="email" placeholder="name_email@example.com">
-                <input type="number" name="" id="num-tickets" class="num-tickets" placeholder="">
+                <input type="number" name="" min="0" max="100" step="1" id="num-tickets" class="num-tickets" placeholder="">
                 <label for="">Cantidad</label>
                 <label for="">Categoria</label>
                 <select name="categoria" id="category-input" class="category-input">
