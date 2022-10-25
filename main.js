@@ -1,7 +1,3 @@
-
-const input = document.getElementById('name');
-const last = document.getElementById('lastname');
-const email = document.getElementById('email');
 const numTicket = document.getElementById('num-tickets');
 const category = document.getElementById('category-input');
 const price = document.getElementById('price');
@@ -16,29 +12,38 @@ function createMenuItem() {
     return p;
 }
 
+function actValue(){
+    let ticket = numTicket.value;
+    let off = category.value;
+    let offValue = 0;
+
+    if(off == "estudiante"){
+        offValue = 0.8;
+    } else if(off == "trainee"){
+        offValue = 0.5;
+    } else if(off == "junior"){
+        offValue = 0.15;
+    }else{
+        offValue = 0;
+    }
+
+    value = 200 * ticket;
+    value = value - (value * offValue)
+    
+}
+
 function actPrice(){
+    actValue();
     if(i == 0){
     price.appendChild(createMenuItem());
-    value = value + 200;
     i++;
     }else{
         let newchild = price.appendChild(createMenuItem());
         parrafo = price.getElementsByTagName('p')[1];
-        value = value + 200;
         price.replaceChild(newchild, parrafo);
     }
 }
 
-input.addEventListener('input', ()=>{
-    actPrice();
-});
-
-last.addEventListener('input', ()=>{
-    actPrice();
-})
-email.addEventListener('input', ()=>{
-    actPrice();
-})
 category.addEventListener('input', ()=>{
     actPrice();
 })
