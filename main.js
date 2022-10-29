@@ -8,9 +8,7 @@ const student = document.getElementById('students');
 let value = 200;
 let i = 0;
 
-junior.addEventListener('click', ()=>{category.value = "junior";});
-traine.addEventListener('click', ()=>{ category.value = "trainee"})
-student.addEventListener('click', ()=>{ category.value = "estudiante" });
+
 
 function createMenuItem() {
     let p = document.createElement('p');
@@ -51,6 +49,20 @@ function actPrice(){
         price.replaceChild(newchild, parrafo);
     }
 }
+
+junior.addEventListener('click', ()=>{
+    category.value = "junior";
+    actPrice();
+});
+traine.addEventListener('click', ()=>{
+    category.value = "trainee";
+    actPrice();
+})
+student.addEventListener('click', ()=>{
+    category.value = "estudiante";
+    actPrice();
+});
+
 
 category.addEventListener('input', ()=>{
     actPrice();
